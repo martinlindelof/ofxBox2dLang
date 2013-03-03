@@ -88,8 +88,8 @@
         //////////////////////////////
         // ofxBox2dCircle
         { "trigger": "ofxBox2dCircle"                                                   ,"contents": "ofxBox2dCirclce ${1:myCircle}"},
-        { "trigger": "ofxBox2dCircle::setup"                                            ,"contents": "${1:ofxBox2dCirclce}.setup(${2:b2World * b2dworld}, ${3:float x}, ${4:float y}, ${5:float radius})"},
-        { "trigger": "ofxBox2dCircle::setup \t(ofVec2f)"                                ,"contents": "${1:ofxBox2dCirclce}.setup(${2:b2World * b2dworld}, ${3:ofVec2f &pts}, ${4:float radius})"},
+        { "trigger": "ofxBox2dCircle::setup"                                            ,"contents": "${1:ofxBox2dCirclce}.setup(${2:ofxBox2d}.getWorld(), ${3:float x}, ${4:float y}, ${5:float radius})"},
+        { "trigger": "ofxBox2dCircle::setup \t(ofVec2f)"                                ,"contents": "${1:ofxBox2dCirclce}.setup(${2:ofxBox2d}.getWorld(), ${3:ofVec2f &pts}, ${4:float radius})"},
         { "trigger": "ofxBox2dCircle::getRadius"                                        ,"contents": "${1:ofxBox2dCirclce}.getRadius()"},
         { "trigger": "ofxBox2dCircle::setRadius"                                        ,"contents": "${1:ofxBox2dCirclce}.setRadius(float r)"},
         { "trigger": "ofxBox2dCircle::draw"                                             ,"contents": "${1:ofxBox2dCirclce}.draw()"},
@@ -117,8 +117,8 @@
         //////////////////////////////
         // ofxBox2dRect
         { "trigger": "ofxBox2dRect"                                         ,"contents": "ofxBox2dRect ${1:myRect}"},
-        { "trigger": "ofxBox2dRect::setup"                                  ,"contents": "${1:ofxBox2dRect}.setup(${{2:b2World * b2dworld}, ${3:float x}, ${4:float y}, ${5:float w}, ${6:float h})"},
-        { "trigger": "ofxBox2dRect::setup \t(ofRectangle)"                  ,"contents": "${1:ofxBox2dRect}.setup(${{2:b2World * b2dworld}, ${3:ofRectangle rec})"},
+        { "trigger": "ofxBox2dRect::setup"                                  ,"contents": "${1:ofxBox2dRect}.setup(${2:ofxBox2d}.getWorld(), ${3:float x}, ${4:float y}, ${5:float w}, ${6:float h})"},
+        { "trigger": "ofxBox2dRect::setup \t(ofRectangle)"                  ,"contents": "${1:ofxBox2dRect}.setup(${2:ofxBox2d}.getWorld(), ${3:ofRectangle rec})"},
         { "trigger": "ofxBox2dRect::getWidth"                               ,"contents": "${1:ofxBox2dRect}.getWidth()"},
         { "trigger": "ofxBox2dRect::getHeight"                              ,"contents": "${1:ofxBox2dRect}.getHeight()"},
         { "trigger": "ofxBox2dRect::getRectangleShape"                      ,"contents": "${1:ofxBox2dRect}.getRectangleShape()"},
