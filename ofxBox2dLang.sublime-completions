@@ -1,0 +1,142 @@
+/*
+
+
+                  ad88             88888888ba                          ad888888b,           88
+                 d8"               88      "8b                        d8"     "88           88
+                 88                88      ,8P                                a8P           88
+     ,adPPYba, MM88MMM 8b,     ,d8 88aaaaaa8P'  ,adPPYba, 8b,     ,d8      ,d8P"    ,adPPYb,88
+    a8"     "8a  88     `Y8, ,8P'  88""""""8b, a8"     "8a `Y8, ,8P'     a8P"      a8"    `Y88
+    8b       d8  88       )888(    88      `8b 8b       d8   )888(     a8P'        8b       88
+    "8a,   ,a8"  88     ,d8" "8b,  88      a8P "8a,   ,a8" ,d8" "8b,  d8"          "8a,   ,d88
+     `"YbbdP"'   88    8P'     `Y8 88888888P"   `"YbbdP"' 8P'     `Y8 88888888888   `"8bbdP"Y8
+
+    ofxBox2d code completion for sublimetext
+    www.openframeworks.cc
+    www.sublimetext.com
+    https://github.com/vanderlin/ofxBox2d
+    http://box2d.org/documentation.html
+
+    2013-03-03, Martin Lindelöf.
+
+*/
+
+{
+    "scope": "source.c++",
+
+    "completions":
+    [
+        ///////////// BEGIN ////////////
+
+        //////////////////////////////
+        // ofxBox2d
+        { "trigger": "ofxBox2d::init"                               ,"contents": "${1:ofxBox2d}.init()"},
+        { "trigger": "ofxBox2d::setFPS"                             ,"contents": "${1:ofxBox2d}.setFPS(${2:float theFps})"},
+        { "trigger": "ofxBox2d::registerGrabbing"                   ,"contents": "${1:ofxBox2d}.registerGrabbing()"},
+        { "trigger": "ofxBox2d::getWorld"                           ,"contents": "${1:ofxBox2d}.getWorld()"},
+        { "trigger": "ofxBox2d::getBodyCount"                       ,"contents": "${1:ofxBox2d}.getBodyCount()"},
+        { "trigger": "ofxBox2d::getJointCount"                      ,"contents": "${1:ofxBox2d}.getJointCount()"},
+        { "trigger": "ofxBox2d::enableGrabbing"                     ,"contents": "${1:ofxBox2d}.enableGrabbing()"},
+        { "trigger": "ofxBox2d::disableGrabbing"                    ,"contents": "${1:ofxBox2d}.disableGrabbing"},
+        { "trigger": "ofxBox2d::setIterations"                      ,"contents": "${1:ofxBox2d}.setIterations(${2:int velocityTimes}, ${3:int positionTimes})"},
+        { "trigger": "ofxBox2d::setGravity"                         ,"contents": "${1:ofxBox2d}.setGravity(${2:float x}, ${3:float y});"},
+        { "trigger": "ofxBox2d::setGravity \t(ofPoint)"             ,"contents": "${1:ofxBox2d}.setGravity(${2:ofPoint pt})"},
+        { "trigger": "ofxBox2d::getGravity"                         ,"contents": "${1:ofxBox2d}.getGravity()"},
+        { "trigger": "ofxBox2d::setBounds"                          ,"contents": "${1:ofxBox2d}.setBounds(${2:ofPoint lowBounds}, ${3:ofPoint upBounds})"},
+        { "trigger": "ofxBox2d::createBounds"                       ,"contents": "${1:ofxBox2d}.createBounds(${2:float x=0}, ${3:float y=0}, ${4:float w=ofGetWidth()}, ${5:float h=ofGetHeight()})"},
+        { "trigger": "ofxBox2d::createBounds \t(ofRectangle)"       ,"contents": "${1:ofxBox2d}.createBounds(${2:ofRectangle &rec})"},
+        { "trigger": "ofxBox2d::createGround \t(ofPoints)"          ,"contents": "${1:ofxBox2d}.createGround(${2:const ofPoint & p1}, ${2:const ofPoint & p2})"},
+        { "trigger": "ofxBox2d::createGround"                       ,"contents": "${1:ofxBox2d}.createGround(${2:float x1=0}, ${2:float y1=ofGetHeight()}, ${3:float x2=ofGetWidth()}, ${4:float y2=ofGetHeight()})"},
+        { "trigger": "ofxBox2d::checkBounds"                        ,"contents": "${1:ofxBox2d}.checkBounds(${2:bool b})"},
+        { "trigger": "ofxBox2d::draw"                               ,"contents": "${1:ofxBox2d}.draw()"},
+        { "trigger": "ofxBox2d::drawGround"                         ,"contents": "${1:ofxBox2d}.drawGround()"},
+        { "trigger": "ofxBox2d::scale"                              ,"contents": "${1:ofxBox2d}.scale"},
+        { "trigger": "ofxBox2d::doSleep"                            ,"contents": "${1:ofxBox2d}.doSleep"},
+
+
+
+        //////////////////////////////
+        // ofxBox2dBaseShape
+        { "trigger": "ofxBox2dBaseShape::setBounce"                 ,"contents": "${1:ofxBox2dBaseShape.}setBounce(${2:float val})"},
+        { "trigger": "ofxBox2dBaseShape::setDensity"                ,"contents": "${1:ofxBox2dBaseShape.}setDensity(${2:float val})"},
+        { "trigger": "ofxBox2dBaseShape::setFriction"               ,"contents": "${1:ofxBox2dBaseShape.}setFriction(${2:float val})"},
+        { "trigger": "ofxBox2dBaseShape::setPhysics"                ,"contents": "${1:ofxBox2dBaseShape.}setPhysics(${2:float density}, ${3:float bounce}, ${4:float friction})"},
+        { "trigger": "ofxBox2dBaseShape::setData"                   ,"contents": "${1:ofxBox2dBaseShape.}setData(${2:void*data})"},
+        { "trigger": "ofxBox2dBaseShape::getData"                   ,"contents": "${1:ofxBox2dBaseShape.}getData()"},
+        { "trigger": "ofxBox2dBaseShape::setFilterData"             ,"contents": "${1:ofxBox2dBaseShape.}setFilterData(${2:b2Filter filter})"},
+        { "trigger": "ofxBox2dBaseShape::enableGravity"             ,"contents": "${1:ofxBox2dBaseShape.}enableGravity(${2:bool b});"},
+        { "trigger": "ofxBox2dBaseShape::setFixedRotation"          ,"contents": "${1:ofxBox2dBaseShape.}setFixedRotation(${2:bool b})"},
+        { "trigger": "ofxBox2dBaseShape::setRotationFriction"       ,"contents": "${1:ofxBox2dBaseShape.}setRotationFriction(${2:float f})"},
+        { "trigger": "ofxBox2dBaseShape::getRotation"               ,"contents": "${1:ofxBox2dBaseShape.}getRotation()"},
+        { "trigger": "ofxBox2dBaseShape::setPosition"               ,"contents": "${1:ofxBox2dBaseShape.}setPosition(${2:float x}, ${3:float y})"},
+        { "trigger": "ofxBox2dBaseShape::setPosition \t(ofVec2f)"   ,"contents": "${1:ofxBox2dBaseShape.}setPosition(${2:ofVec2f p})"},
+        { "trigger": "ofxBox2dBaseShape::getPosition"               ,"contents": "${1:ofxBox2dBaseShape.}getPosition()"},
+        { "trigger": "ofxBox2dBaseShape::getB2DPosition"            ,"contents": "${1:ofxBox2dBaseShape.}getB2DPosition()"},
+        { "trigger": "ofxBox2dBaseShape::setVelocity"               ,"contents": "${1:ofxBox2dBaseShape.}setVelocity(${2:float x}, ${3:float y})"},
+        { "trigger": "ofxBox2dBaseShape::setVelocity \t(ofVec2f)"   ,"contents": "${1:ofxBox2dBaseShape.}setVelocity(${2:ofVec2f p})"},
+        { "trigger": "ofxBox2dBaseShape::getVelocity"               ,"contents": "${1:ofxBox2dBaseShape.}getVelocity()"},
+        { "trigger": "ofxBox2dBaseShape::setDamping"                ,"contents": "${1:ofxBox2dBaseShape.}setDamping(${2:float f})"},
+        { "trigger": "ofxBox2dBaseShape::setDamping(fx,fy)"         ,"contents": "${1:ofxBox2dBaseShape.}setDamping(${2:float fx}, ${3:float fy})"},
+        { "trigger": "ofxBox2dBaseShape::addForce"                  ,"contents": "${1:ofxBox2dBaseShape.}addForce(${2:ofVec2f frc}, ${3:float scale})"},
+        { "trigger": "ofxBox2dBaseShape::addImpulseForce"           ,"contents": "${1:ofxBox2dBaseShape.}addImpulseForce(${2:ofVec2f pt}, ${3:ofVec2f amt})"},
+        { "trigger": "ofxBox2dBaseShape::addRepulsionForce"         ,"contents": "${1:ofxBox2dBaseShape.}addRepulsionForce(${2:ofVec2f pt}, ${3:float radius}, ${4:float amt})"},
+        { "trigger": "ofxBox2dBaseShape::destroy"                   ,"contents": "${1:ofxBox2dBaseShape.}destroy"},
+        { "trigger": "ofxBox2dBaseShape::dead"                      ,"contents": "${1:ofxBox2dBaseShape.}dead"},
+        { "trigger": "ofxBox2dBaseShape::alive"                     ,"contents": "${1:ofxBox2dBaseShape.}alive"},
+        { "trigger": "ofxBox2dBaseShape::setMassFromShape"          ,"contents": "${1:ofxBox2dBaseShape.}setMassFromShape"},
+
+
+        //////////////////////////////
+        // ofxBox2dCircle
+        { "trigger": "ofxBox2dCircle"                                                   ,"contents": "ofxBox2dCirclce ${1:myCircle}"},
+        { "trigger": "ofxBox2dCircle::setup"                                            ,"contents": "${1:ofxBox2dCirclce}.setup(${2:b2World * b2dworld}, ${3:float x}, ${4:float y}, ${5:float radius})"},
+        { "trigger": "ofxBox2dCircle::setup \t(ofVec2f)"                                ,"contents": "${1:ofxBox2dCirclce}.setup(${2:b2World * b2dworld}, ${3:ofVec2f &pts}, ${4:float radius})"},
+        { "trigger": "ofxBox2dCircle::getRadius"                                        ,"contents": "${1:ofxBox2dCirclce}.getRadius()"},
+        { "trigger": "ofxBox2dCircle::setRadius"                                        ,"contents": "${1:ofxBox2dCirclce}.setRadius(float r)"},
+        { "trigger": "ofxBox2dCircle::draw"                                             ,"contents": "${1:ofxBox2dCirclce}.draw()"},
+        { "trigger": "ofxBox2dCircle::addAttractionPoint"                               ,"contents": "${1:ofxBox2dCirclce}.addAttractionPoint(${2:float x}, ${3:float y}, ${4:float amt=1})"},
+        { "trigger": "ofxBox2dCircle::addAttractionPoint \t(ofVec2f)"                   ,"contents": "${1:ofxBox2dCirclce}.addAttractionPoint(${2:ofVec2f pt}, ${3:float amt=1})"},
+        { "trigger": "ofxBox2dCircle::addRepulsionForce"                                ,"contents": "${1:ofxBox2dCirclce}.addRepulsionForce(${2:float x}, ${3:float y}, ${4:float amt})"},
+        { "trigger": "ofxBox2dCircle::addRepulsionForce \t(ofVec2f)"                    ,"contents": "${1:ofxBox2dCirclce}.addRepulsionForce(${2:ofVec2f pt}, ${3:float amt})"},
+
+        //////////////////////////////
+        // ofxBox2dContactListener
+
+
+        //////////////////////////////
+        // ofxBox2dJoin
+
+
+        //////////////////////////////
+        // ofxBox2dPolygon
+
+
+        //////////////////////////////
+        // ofxBox2dPolygonUtils
+
+
+        //////////////////////////////
+        // ofxBox2dRect
+        { "trigger": "ofxBox2dRect"                                         ,"contents": "ofxBox2dRect ${1:myRect}"},
+        { "trigger": "ofxBox2dRect::setup"                                  ,"contents": "${1:ofxBox2dRect}.setup(${{2:b2World * b2dworld}, ${3:float x}, ${4:float y}, ${5:float w}, ${6:float h})"},
+        { "trigger": "ofxBox2dRect::setup \t(ofRectangle)"                  ,"contents": "${1:ofxBox2dRect}.setup(${{2:b2World * b2dworld}, ${3:ofRectangle rec})"},
+        { "trigger": "ofxBox2dRect::getWidth"                               ,"contents": "${1:ofxBox2dRect}.getWidth()"},
+        { "trigger": "ofxBox2dRect::getHeight"                              ,"contents": "${1:ofxBox2dRect}.getHeight()"},
+        { "trigger": "ofxBox2dRect::getRectangleShape"                      ,"contents": "${1:ofxBox2dRect}.getRectangleShape()"},
+        { "trigger": "ofxBox2dRect::addAttractionPoint"                     ,"contents": "${1:ofxBox2dRect}.addAttractionPoint(${2:float x}, ${3:float y}, ${4:float amt});"},
+        { "trigger": "ofxBox2dRect::addAttractionPoint \t(ofVec2f)"         ,"contents": "${1:ofxBox2dRect}.addAttractionPoint(${2:ofVec2f pt}, ${3:float amt});"},
+        { "trigger": "ofxBox2dRect::addRepulsionForce"                      ,"contents": "${1:ofxBox2dRect}.addRepulsionForce(${2:float x}, ${3:float y}, ${4:float amt});"},
+        { "trigger": "ofxBox2dRect::addRepulsionForce \t(ofVec2f)"          ,"contents": "${1:ofxBox2dRect}.addRepulsionForce(${2:ofVec2f pt}, ${3:float amt});"},
+
+        //////////////////////////////
+        // ofxBox2dRender
+
+
+        //////////////////////////////
+        // ofxBox2dUtils
+
+
+
+        ////////////// END  ///////////
+        {} // trailing object, don't remove
+    ]
+}
